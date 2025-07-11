@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { FaTrash, FaEdit } from "react-icons/fa";
+import { FaTrash, FaEdit,FaRupeeSign } from "react-icons/fa";
 
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import {
@@ -150,7 +150,7 @@ const TransactionList = () => {
                       transaction.type.slice(1)}
                   </span>
                   <span className="ml-2 text-gray-800">
-                    {transaction.category?.name} - $
+                    {transaction.category?.name} - <FaRupeeSign className="inline mr-2 text-blue-500" />
                     {transaction.amount.toLocaleString()}
                   </span>
                   <span className="text-sm text-gray-600 italic ml-2">
