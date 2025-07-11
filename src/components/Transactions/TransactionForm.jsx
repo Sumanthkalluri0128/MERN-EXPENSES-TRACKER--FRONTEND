@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import {
+  FaRupeeSign,
   FaDollarSign,
   FaCalendarAlt,
   FaRegCommentDots,
@@ -113,7 +114,7 @@ const TransactionForm = () => {
       {/* Amount Field */}
       <div className="flex flex-col space-y-1">
         <label htmlFor="amount" className="text-gray-700 font-medium">
-          <FaDollarSign className="inline mr-2 text-blue-500" />
+          <FaRupeeSign className="inline mr-2 text-blue-500" />
           Amount
         </label>
         <input
